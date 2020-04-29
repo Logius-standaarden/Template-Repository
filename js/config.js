@@ -1,6 +1,6 @@
 var respecConfig = {
   //voor specStatus mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specStatus
-  specStatus: "GN-WV",
+  specStatus: "DK-WV",
   //voor specType mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specType
   specType: "HR",
   // TODO: Standaard emailadres bij een consultatieversie: geo-standaarden@geonovum.nl
@@ -17,7 +17,7 @@ var respecConfig = {
   previousPublishDate: "2017-05-31",
   // Zie https://github.com/w3c/respec/wiki/previousMaturity. Dit moet een
   // Als previousMaturity niet opgegeven wprdt, maar previousPublishDate wel, dan wordt dezelfde status gebruikt als bij specStatus
-  previousMaturity: "GN-VV",
+  previousMaturity: "DK-VV",
   // licentie. Kiezen uit:
   license: 'cc-by-nd',
   // logos: [], // Geef een lege array op als er geen Geonovum logo moet staan
