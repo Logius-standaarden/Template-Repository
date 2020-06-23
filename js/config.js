@@ -11,7 +11,7 @@ var respecConfig = {
   splitMDsections: true,
  
   // Vul in om een korte extra uitleg te weergeven op de docs.centrumvoorstandaarden.nl website.
-  //subExplanation: "...", 
+  subExplanation: "", 
  
   // Voor publishDate zie https://github.com/w3c/respec/wiki/publishDate
   // Als er geen publishDate is opgegeven, genereert ReSpec de dataum o.b.v. de laatste wijzigingen
