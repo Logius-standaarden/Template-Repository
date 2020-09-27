@@ -1,5 +1,5 @@
 var respecConfig = {
-  specStatus: "DK-WV",
+  specStatus: "GN-WV",
   specType: "HR",
   splitMDsections: true,
   subExplanation: "", 
