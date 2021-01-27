@@ -1,4 +1,7 @@
 var respecConfig = {
+  // this template doesn''t use all possible config parameters
+  // see https://respec.org/docs/ for alle 
+
   // specStatus currently supported
   // WW, GN-WV: Werkversie
   // CV, GN-CV: Consultatie versie
@@ -26,6 +29,28 @@ var respecConfig = {
 
   // The specification's "short name", which is the name used in NL_Respec URLs
   shortName: "API-Design-Rules",
+
+  // A YYYY-MM-DD date. The publication date of the present document. 
+  // Als er geen publishDate is opgegeven, genereert ReSpec de dataum o.b.v. de laatste wijzigingen
+  // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
+  publishDate: "2021-01-31",
+
+  // A YYYY-MM-DD date. When there is a previous release of a given specification, (W3C)
+  previousPublishDate: "2021-01-31",
+
+  // Zie https://github.com/w3c/respec/wiki/previousMaturity. Dit moet een
+  // A YYYY-MM-DD date. When a previousPublishDate is specified, this is typically required as well in order to generate the "Previous Version"
+  //previousMaturity: "WV",
+
+  // license can be one of the following: cc0, cc-by or cc-by-nd((default)) (see https://github.com/Geonovum/respec/wiki/license )
+  license: 'cc-by-nd',
+
+  // Overrides the standard logo with one or more other logos. (see https://respec.org/docs/#logos)
+  // Geef een lege array op als er geen <default> logo moet staan
+  // logos: [], 
+
+  //Adds a JSON-LD script element containing schema.org information, which can be useful for search engines.
+  doJsonLd: true,
 
   // An array of person objects describing the editors of the document
   // this can be simple or more elaborated
