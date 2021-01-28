@@ -174,6 +174,44 @@ var respecConfig = {
       date: "Maart 2011",
       publisher: "Nederlands Normalisatie-instituut",
     },
-  },
+    "Digikoppeling Architectuur": {
+      href: "https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/static.html",
+      title:
+        "Digikoppeling Architectuur",
+      authors: ["Logius Centrum voor standaarden"],
+      date: "december 2020",
+      publisher: "Logius",
+    },
+    UMMR10: {
+      href: "https://unece.org/DAM/cefact/umm/UMM_Revision_10_2001.zip",
+      title: "UMM Revision 10",
+      authors: [""],
+      date: "2001",
+      publisher: "UN/CEFACT",
+    },
+    UMMUG: {
+      href: "www.unece.org/fileadmin/DAM/cefact/umm/UMM_userguide_220606.pdf",
+      title: "UN/CEFACT Modeling Methodology (UMM) User Guide",
+      authors: [""],
+      date: "2003",
+      publisher: "UN/CEFACT",
+    },
+    "Digikoppeling Beveiligingsdocument": {
+      href: "https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf",
+      title: "Digikoppeling Beveiligingsstandaarden en voorschriften",
+      date: "2020",
+      publisher: "Logius",
+    },
+    "PKI Policy": {
+      href: "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen",
+      title: "Programma van Eisen (PKIoverheid)",
+      publisher: "Logius",
+    },
+    "PKI CA": {
+      href: "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/toegetreden-vertrouwensdienstverleners",
+      title: "Toegetreden vertrouwensdienstverleners",
+      publisher: "Logius",
+    },
 
+  }
 };
