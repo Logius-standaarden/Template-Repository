@@ -57,19 +57,20 @@ var respecConfig = {
   editors: [{
     name: "Peter Haasnoot",
     url: "https://logius.nl/standaarden",
+    company: "Logius",
   },
   {
     name: "Pieter Hering",
-    mailto: "api@digikoppeling.nl",
+    url: "https://logius.nl/standaarden",
     company: "Logius",
-    companyURL: "https://logius.nl/standaarden",
   }
   ],
   // An array of person objects describing the authors of the document
   // this can be simple or more elaborated
   authors: [{
-    name: "Pieter Hering",
+    name: "Logius",
     url: "https://logius.nl/standaarden",
+    mailto: "digikoppeling@logius.nl",
   }
   ],
   // The github option allows you associate your specification with a repository on GitHub.
