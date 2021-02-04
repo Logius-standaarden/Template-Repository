@@ -112,6 +112,10 @@ var respecConfig = {
   // the url in the header thisVersion is generated like `<conf.nl_organisationPublishURL>/<conf.pubDomain>/<specStatus>-<specType.toLowerCase()>-<conf.shortName>}-conf.publishDate>/`
   pubDomain: "dk",
 
+  // this parameter will add the tag_name of the latest release to the document Title
+  // only set this parameter when a release has been set
+  nl_addReleaseTagTitle: false,
+
   // For Consultatieversies (specStatus="GN-CV") there is a default text in the section "Status of this document" that contains an emailaddress for feedback and comments on the document.
   nl_emailComments: "digikoppeling@logius.nl",
 
@@ -138,7 +142,7 @@ var respecConfig = {
 
   // class style can be automatically insertd in generated markdown tables
   // currently defaults to simple, but this may change
-  // options simple, data, <your css>    
+  // options 'simple', 'data', the style css in this template uses 'dkkvs'
   nl_markdownTableClass: "simple",
 
   // if nl_markdownEmbedImageInFigure is set to true images in markdown generated content will be surrounded with <figures> element
