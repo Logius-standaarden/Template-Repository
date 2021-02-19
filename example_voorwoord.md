@@ -19,7 +19,6 @@ Noot tekst hier...
 </aside>
 
 <aside class="issue" data-number="1">
-Issue tekst hier...
 </aside>
 
 <aside class="warning">
