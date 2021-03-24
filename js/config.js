@@ -114,13 +114,10 @@ var respecConfig = {
   // maxTocLevel: 3,
 
   // Shows links to alternate formats (such as PDF, ePub) in the document header.
-  // alternateFormats: [{
-  //     label: "html",
-  //     uri: "https://publicatie.centrumvoorstandaarden.nl/api/oauth/snapshot.html",
-  //   },
+  // alternateFormats: [
   //   {
   //     label: "pdf",
-  //     uri: "https://publicatie.centrumvoorstandaarden.nl/api/oauth/OAuth-NL-profiel.pdf",
+  //     uri: "Template-Repository.pdf",
   //   },
   // ],
 
@@ -160,7 +157,7 @@ var respecConfig = {
   // class style can be automatically inserted in generated markdown tables
   // currently defaults to simple, but this may change
   // options 'simple', 'data', the style css in this template uses 'dkkvs'
-  nl_markdownTableClass: "simple",
+  nl_markdownTableClass: "dkkvs",
 
   // class style can be automatically inserted in generated markdown code (e.g. `example`)
   // when set the style css can refer to this class 
