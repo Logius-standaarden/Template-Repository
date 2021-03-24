@@ -27,16 +27,38 @@ var respecConfig = {
   // subtitle will be shown below title, can be omitted 
   subtitle: "Hier komt een subtitle",
 
-  // The specification's "short name", which is the name used in NL_Respec URLs
-  shortName: "digikoppeling",
-
+  
   // A YYYY-MM-DD date. The publication date of the present document. 
   // Als er geen publishDate is opgegeven, genereert ReSpec de dataum o.b.v. de laatste wijzigingen
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
-  publishDate: "2021-02-19",
+  publishDate: "2021-01-01",
 
   // A YYYY-MM-DD date. When there is a previous release of a given specification, (W3C)
-  previousPublishDate: "2021-01-31",
+  previousPublishDate: "2020-12-31",
+
+  // The actual version preferably in SEMVER notation
+  // for Logius specifications this field is required: if this parameters exists this value will be used as directory name  
+  // currently, the 'this version' url will only point to the [publication server] if specStatus is "DEF"
+  // otherwise it will refer to the the github.io environment   
+  // (if this parameter does not exist the publisDate will be used.)
+  publishVersion: "2.8",
+
+  // The previous version preferably in SEMVER notation
+  // for Logius specifications this field is optional: if this parameters exists this value will be used as directory name  
+  // (if this parameter does not exist the previousPublisDate will be used, which may lead to an incorrect url .)
+  previousPublishVersion: "1.6.5",
+
+  // The specification's publish domain, which is used to publish the specification
+  // the url in the header thisVersion is generated like `<conf.nl_organisationPublishURL>/<conf.pubDomain>/<conf.shortName>/`
+  pubDomain: "dk",
+
+  // The specification's "short name", which is the name used in NL_Respec URLs
+  shortName: "ebms",
+
+  // Based on the example settings Respec will generate the following links in the header:
+  // https://publicatie.centrumvoorstandaarden.nl/dk/ebms/
+  // https://{nl_organisationPublishURL}/{pubDomain}/{shortName}/
+  
 
   // Zie https://github.com/w3c/respec/wiki/previousMaturity. Dit moet een
   // A YYYY-MM-DD date. When a previousPublishDate is specified, this is typically required as well in order to generate the "Previous Version"
@@ -94,11 +116,11 @@ var respecConfig = {
   // Shows links to alternate formats (such as PDF, ePub) in the document header.
   // alternateFormats: [{
   //     label: "html",
-  //     uri: "https://publicatie.centrumvoorstandaarden.nl/api/oauth/static.html",
+  //     uri: "https://publicatie.centrumvoorstandaarden.nl/api/oauth/snapshot.html",
   //   },
   //   {
   //     label: "pdf",
-  //     uri: "https://publicatie.centrumvoorstandaarden.nl/api/oauth/static.pdf",
+  //     uri: "https://publicatie.centrumvoorstandaarden.nl/api/oauth/OAuth-NL-profiel.pdf",
   //   },
   // ],
 
@@ -106,15 +128,6 @@ var respecConfig = {
   // format: "markdown",
   // <section data-format="markdown" data-include="<filename>.md"></section>
 
-
-  // The specification's publish domain, which is used to publish the specification
-  // the url in the header thisVersion is generated like `<conf.nl_organisationPublishURL>/<conf.pubDomain>/<specStatus>-<specType.toLowerCase()>-<conf.shortName>}-conf.publishDate>/`
-  pubDomain: "dk",
-
-  // Based on the example settings Respec will generate the following links in the header:
-  // https://publicatie.centrumvoorstandaarden.nl/dk/ebms/
-  // https://{nl_organisationPublishURL}/{pubDomain}/{pubSubDomain}/
-  // pubSubDomain: "ebms",
 
   // this parameter will add the tag_name of the latest release to the document Title
   // only set this parameter when a release has been set
@@ -144,10 +157,14 @@ var respecConfig = {
   // defaults to "GN-"  
   nl_organisationPrefix: "LS-",
 
-  // class style can be automatically insertd in generated markdown tables
+  // class style can be automatically inserted in generated markdown tables
   // currently defaults to simple, but this may change
   // options 'simple', 'data', the style css in this template uses 'dkkvs'
   nl_markdownTableClass: "simple",
+
+  // class style can be automatically inserted in generated markdown code (e.g. `example`)
+  // when set the style css can refer to this class 
+  nl_markdownCodeClass: "code",
 
   // if nl_markdownEmbedImageInFigure is set to true images in markdown generated content will be surrounded with <figures> element
   // so that figures can be linked are be a part of table of figures
@@ -185,7 +202,7 @@ var respecConfig = {
       publisher: "Nederlands Normalisatie-instituut",
     },
     "Digikoppeling Architectuur": {
-      href: "https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/static.html",
+      href: "https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/snapshot.html",
       title:
         "Digikoppeling Architectuur",
       authors: ["Logius Centrum voor standaarden"],
