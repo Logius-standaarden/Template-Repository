@@ -25,9 +25,9 @@ var respecConfig = {
   specType: "HR",
 
   // subtitle will be shown below title, can be omitted 
-  subtitle: "Hier komt een subtitle",
+  // subtitle: "Hier komt een subtitle",
 
-  
+
   // A YYYY-MM-DD date. The publication date of the present document. 
   // Als er geen publishDate is opgegeven, genereert ReSpec de dataum o.b.v. de laatste wijzigingen
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
@@ -37,7 +37,7 @@ var respecConfig = {
   previousPublishDate: "2020-12-31",
 
   // The actual version preferably in SEMVER notation
-  // for Logius specifications this field is required: if this parameters exists this value will be used as directory name  
+  // for Logius specifications this field is required: if this parameters exists, this value will be used as directoryname  
   // currently, the 'this version' url will only point to the [publication server] if specStatus is "DEF"
   // otherwise it will refer to the the github.io environment   
   // (if this parameter does not exist the publisDate will be used.)
@@ -52,13 +52,13 @@ var respecConfig = {
   // the url in the header thisVersion is generated like `<conf.nl_organisationPublishURL>/<conf.pubDomain>/<conf.shortName>/`
   pubDomain: "dk",
 
-  // The specification's "short name", which is the name used in NL_Respec URLs
+  // The specification's "short name", is used in NL_Respec URLs in the following way: `<conf.nl_organisationPublishURL>/<conf.pubDomain>/<conf.shortName>/`
   shortName: "ebms",
 
   // Based on the example settings Respec will generate the following links in the header:
   // https://publicatie.centrumvoorstandaarden.nl/dk/ebms/
   // https://{nl_organisationPublishURL}/{pubDomain}/{shortName}/
-  
+
 
   // Zie https://github.com/w3c/respec/wiki/previousMaturity. Dit moet een
   // A YYYY-MM-DD date. When a previousPublishDate is specified, this is typically required as well in order to generate the "Previous Version"
@@ -130,11 +130,11 @@ var respecConfig = {
   // only set this parameter when a release has been set
   nl_addReleaseTagTitle: false,
 
-  // For Consultatieversies (specStatus="GN-CV") there is a default text in the section "Status of this document" that contains an emailaddress for feedback and comments on the document.
+  // For Consultatieversies (specStatus="GN-CV") the generated text in the section "Status of this document" contains an emailaddress for feedback and comments on the document.
   nl_emailComments: "digikoppeling@logius.nl",
 
   // if you use a single document for your spec, which uses more than one markdown H1 header, e.g. '# inleiding'
-  // this configuration can be set to make sure that the alle H1 headers and navigation bars are preserved
+  // this configuration can be set to make sure that the all H1 headers and navigation bars are retained as H1 headers
   nl_markdownSplitH1sections: true,
 
   // in some cases the Repository of a Specification document and the Issue- and PR bases are split
@@ -187,7 +187,7 @@ var respecConfig = {
     url: "https://www.logius.nl/standaarden",
   },
 
-  // If you need to include a one-off reference that isn't in the SpecRef database or 
+  // If you need to include a one-off reference that is not present in the SpecRef database or 
   // if you need to override an existing reference with specific content, then you can use this configuration option.
   localBiblio: {
     NEN3610: {
